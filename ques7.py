@@ -15,12 +15,12 @@ while True:
             print("Student not found!")
     elif choice == "3":
         name = input("Enter student name to search: ")
-        print(f"{name}: {students.get(name, 'Not found')}")
+        print(name,":",students.get(name,'Not found'))
     elif choice == "4":
         for name, marks in sorted(students.items(), key=lambda x: x[1], reverse=True):
-            print(f"{name}: {marks}")
+            print(name,":",marks)
     elif choice == "5":
-        print("Exiting...")
+        print("Exiting")
         break
     else:
         print("Invalid choice! Try again.")
